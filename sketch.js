@@ -15,9 +15,9 @@ function setup() {
   for (i = 0; i < num; i++){
     flock.push(new Element());
   }
-  link1 = createA('http://127.0.0.1:5501/PeatBramble/');
-  link2 = createA('http://127.0.0.1:5501/GlibDive/');
-  link3 = createA('http://127.0.0.1:5501/AtTheEndOf/');
+  link1 = createA('http://127.0.0.1:5501/PeatBramble/', '');
+  link2 = createA('http://127.0.0.1:5501/GlibDive/', '');
+  link3 = createA('http://127.0.0.1:5501/AtTheEndOf/', '');
   button1 = createButton('Peat Bramble').parent(link1);
   button2 = createButton('Glib Dive').parent(link2);
   button3 = createButton('Tethers').parent(link3);
