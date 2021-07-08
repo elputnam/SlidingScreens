@@ -1,6 +1,9 @@
 let flock = [];
 var num;
 var tileCount;
+let button1;
+let button2;
+let button3;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -12,6 +15,13 @@ function setup() {
   for (i = 0; i < num; i++){
     flock.push(new Element());
   }
+  link1 = createA('http://127.0.0.1:5501/PeatBramble/');
+  link2 = createA('http://127.0.0.1:5501/GlibDive/');
+  link3 = createA('http://127.0.0.1:5501/AtTheEndOf/');
+  button1 = createButton('Peat Bramble').parent(link1);
+  button2 = createButton('Glib Dive').parent(link2);
+  button3 = createButton('Tethers').parent(link3);
+
 }
 
 function draw() {
@@ -22,6 +32,18 @@ function draw() {
     flock[i].display();
     flock[i].update();
     flock[i].edges();
+  links();
+  }
+
+function links(){
+    
+    button1.position(width*.25+random(-2,2), height*.25)+random(-2,2);
+
+    
+    button2.position(width*.25+random(-2,2), height*.5)+random(-2,2);
+
+    
+    button3.position(width*.25+random(-2,2), height*.75)+random(-2,2);
   }
   
 }
