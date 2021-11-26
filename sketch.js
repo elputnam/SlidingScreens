@@ -32,7 +32,7 @@ function draw() {
     flock[i].display();
     flock[i].update();
     flock[i].edges();
-  links();
+  // links();
   }
 
 function links(){
